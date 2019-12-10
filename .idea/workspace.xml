@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe54e09f-04de-49bb-87a8-c533ce0a8ca9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day06.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AOC2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AOC2019.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,43 +26,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.Day05">
-    <configuration name="Day01" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AOC2019" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Day06">
     <configuration name="Day02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AOC2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,15 +122,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Day06" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AOC2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day06.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day06" />
         <item itemvalue="Python.Day05" />
         <item itemvalue="Python.Day04" />
         <item itemvalue="Python.Day03" />
         <item itemvalue="Python.Day02" />
-        <item itemvalue="Python.Day01" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -181,5 +190,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="559" y="119" key="#Day06" timestamp="1575912165447">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="559" y="119" key="#Day06/0.0.1680.1010@0.0.1680.1010" timestamp="1575912165447" />
+    <state width="1659" height="256" key="GridCell.Tab.0.bottom" timestamp="1575919928986">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1659" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1575919928986" />
+    <state width="1659" height="256" key="GridCell.Tab.0.center" timestamp="1575919928986">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1659" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1575919928986" />
+    <state width="1659" height="256" key="GridCell.Tab.0.left" timestamp="1575919928986">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1659" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1575919928986" />
+    <state width="1659" height="256" key="GridCell.Tab.0.right" timestamp="1575919928986">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1659" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1575919928986" />
+    <state x="341" y="147" key="SettingsEditor" timestamp="1575912412775">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1575912412775" />
+    <state x="541" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1575967284772">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="541" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1575967284772" />
   </component>
 </project>
