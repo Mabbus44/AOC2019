@@ -15,27 +15,13 @@ class Body:
             return self.parent.orbitCount() + 1
         return 0
 
-    def expandRoutes(self, inputRoute):
-        #   Returns a list of all possible continuations of inputRout that do not repeat a body
-        newBody = 0
-        parentCount = 0
+    def parentList(self, inputList):
+        #   Returns a list of all parents and grand parents
         if self.parent:
-            parentCount = 1
-        ret = []
-        for cIndex in range(len(self.children)+parentCount):
-            validRoute = False
-            if cIndex == len(self.children):
-                newBody = self.parent
-            else:
-                newBody = self.children[cIndex]
-            for i in inputRoute:
-                if i == newBody:
-                    validRoute = False
-            if validRoute:
-                newRoute = list(inputRoute)
-                newRoute.append(newBody)
-                ret.append(newRoute)
-        return ret
+            inputList.append(self.parent)
+            return self.parent.parentList(inputList)
+        else:
+            return inputList
 
 
 class BodyList:
@@ -72,13 +58,6 @@ class BodyList:
         if parentBody:
             parentBody.children.append(mainBody)
 
-    def indexByName(self, name):
-        #   Returns index of object with name
-        for i in range(len(self.bodies)):
-            if self.bodies[i] == name:
-                return i
-        return -1
-
 
 def part1():
     fileInput = getFileContent("Day 6 Input.txt", False, False, "\n", ")")
@@ -96,16 +75,21 @@ def part2():
     bodies = BodyList()
     for row in fileInput:
         bodies.addBody(row[1], row[0])
-    startBody = bodies.bodies[bodies.indexByName("YOU")].parent
-    endBody = bodies.bodies[bodies.indexByName("SAN")].parent
-    routes = startBody.expandRoutes([])
-    routeLen = 1
-    newRoutes = []
-    for r in routes:
-        tNewRoutes = r[routeLen-1].expandRoutes(r)
-        for r2 in tNewRoutes:
-            newRoutes.append(r2)
-    print("Part 2: {} orbits".format(orbitSum))
+    startBody = next(b for b in bodies.bodies if b.name == "YOU")
+    endBody = next(b for b in bodies.bodies if b.name == "SAN")
+    startBodyParents = startBody.parentList([])
+    endBodyParents = endBody.parentList([])
+    firstHalf = 0
+    for p in startBodyParents:
+        if p in endBodyParents:
+            break
+        firstHalf += 1
+    secondHalf = 0
+    for p in endBodyParents:
+        if p in startBodyParents:
+            break
+        secondHalf += 1
+    print("Part 2: {}".format(firstHalf + secondHalf))
 
 
 part2()
