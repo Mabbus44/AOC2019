@@ -22,13 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe54e09f-04de-49bb-87a8-c533ce0a8ca9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day09.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AOC2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AOC2019.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MabbusLib.py" beforeDir="false" afterPath="$PROJECT_DIR$/MabbusLib.py" afterDir="false" />
-    </list>
+    <list default="true" id="fe54e09f-04de-49bb-87a8-c533ce0a8ca9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
