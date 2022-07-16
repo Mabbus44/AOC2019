@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe54e09f-04de-49bb-87a8-c533ce0a8ca9" name="Default Changelist" comment="" />
+    <list default="true" id="fe54e09f-04de-49bb-87a8-c533ce0a8ca9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Day09.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AOC2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AOC2019.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MabbusLib.py" beforeDir="false" afterPath="$PROJECT_DIR$/MabbusLib.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +44,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1UN74GEhhzRBkMjBxpM8oEx8sjm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,35 +55,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunManager" selected="Python.Day08">
-    <configuration name="Day04" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AOC2019" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day04.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Github/AOC2019&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.Day09">
     <configuration name="Day05" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AOC2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,16 +148,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Day09" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AOC2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day09.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day09" />
+        <item itemvalue="Python.Day05" />
         <item itemvalue="Python.Day08" />
         <item itemvalue="Python.Day07" />
-        <item itemvalue="Python.Day05" />
         <item itemvalue="Python.Day06" />
-        <item itemvalue="Python.Day04" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,45 +203,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="549" y="100" key="#Day06" timestamp="1601722861989">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="549" y="100" key="#Day06/0.0.1680.1010@0.0.1680.1010" timestamp="1601722861989" />
-    <state width="1659" height="379" key="GridCell.Tab.0.bottom" timestamp="1601753180670">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="379" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180670" />
-    <state width="1659" height="379" key="GridCell.Tab.0.center" timestamp="1601753180670">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="379" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180670" />
-    <state width="1659" height="379" key="GridCell.Tab.0.left" timestamp="1601753180669">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="379" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180669" />
-    <state width="1659" height="379" key="GridCell.Tab.0.right" timestamp="1601753180670">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="379" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180670" />
-    <state width="1659" height="201" key="GridCell.Tab.1.bottom" timestamp="1601753180649">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="201" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180649" />
-    <state width="1659" height="201" key="GridCell.Tab.1.center" timestamp="1601753180648">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="201" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180648" />
-    <state width="1659" height="201" key="GridCell.Tab.1.left" timestamp="1601753180648">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="201" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180648" />
-    <state width="1659" height="201" key="GridCell.Tab.1.right" timestamp="1601753180649">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="201" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1601753180649" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -237,7 +212,32 @@
           <line>9</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day05.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MabbusLib.py</url>
+          <line>155</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MabbusLib.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MabbusLib.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.readMode" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

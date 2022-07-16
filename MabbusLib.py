@@ -81,6 +81,7 @@ class IntCodeComputer05:
     def __init__(self, mem):
         self.mem = mem
         self.p = 0
+        self.relativeBase = 0
         self.readMode = [0, 0, 0]
         self.input = 1
         self.output = 0
@@ -95,6 +96,7 @@ class IntCodeComputer05:
         self.JUMP_IF_FALSE = 6
         self.LESS_THAN = 7
         self.EQUALS = 8
+        self.ADJUST_RELATIVE_BASE = 9
 
     def translateOPCode(self):
         #   Sets readMode and returns opCode
@@ -114,9 +116,36 @@ class IntCodeComputer05:
     def getParameter(self, i, mode):
         #   Gets memory slot mem[i], or value mem[i] depending on mode
         if self.readMode[mode] == 0:
-            return self.mem[self.mem[i]]
+            return self.getMem(self.getMem(i))
+        if self.readMode[mode] == 1:
+            return self.getMem(i)
         else:
-            return self.mem[i]
+            return self.getMem(self.relativeBase + self.getMem(i))
+
+    def getDestination(self, i, mode):
+        #   Gets destination memory slot
+        if self.readMode[mode] == 0:
+            return self.getMem(i)
+        if self.readMode[mode] == 1:
+            return i
+        else:
+            return self.relativeBase + self.getMem(i)
+
+    def getMem(self, i):
+        #   Gets memory slot i. If it does not exist we crate it
+        if i < 0:
+            print("ERROR: Read negative address")
+        if i >= len(self.mem):
+            self.mem.extend([0]*(i-len(self.mem)+1))
+        return self.mem[i]
+
+    def setMem(self, i, val):
+        #   Sets memory slot i. If it does not exist we crate it
+        if i < 0:
+            print("ERROR: Read negative address")
+        if i >= len(self.mem):
+            self.mem.extend([0]*(i-len(self.mem)+1))
+        self.mem[i] = val
 
     def executeCode(self):
         self.newOutput = False
@@ -127,13 +156,15 @@ class IntCodeComputer05:
         if opCode == self.END:
             return 0
         if opCode == self.ADD:
-            self.mem[self.mem[self.p+3]] = self.getParameter(self.p+1, 0) + self.getParameter(self.p+2, 1)
+            self.setMem(self.getDestination(self.p+3, 2),
+                        self.getParameter(self.p+1, 0) + self.getParameter(self.p+2, 1))
             self.p += 4
         if opCode == self.MULTIPLY:
-            self.mem[self.mem[self.p+3]] = self.getParameter(self.p+1, 0) * self.getParameter(self.p+2, 1)
+            self.setMem(self.getDestination(self.p+3, 2),
+                        self.getParameter(self.p+1, 0) * self.getParameter(self.p+2, 1))
             self.p += 4
         if opCode == self.INPUT:
-            self.mem[self.mem[self.p+1]] = self.input
+            self.setMem(self.getDestination(self.p+1, 0), self.input)
             self.p += 2
         if opCode == self.OUTPUT:
             self.output = self.getParameter(self.p+1, 0)
@@ -151,16 +182,19 @@ class IntCodeComputer05:
                 self.p += 3
         if opCode == self.LESS_THAN:
             if self.getParameter(self.p + 1, 0) < self.getParameter(self.p + 2, 1):
-                self.mem[self.mem[self.p + 3]] = 1
+                self.setMem(self.getDestination(self.p + 3, 2), 1)
             else:
-                self.mem[self.mem[self.p + 3]] = 0
+                self.setMem(self.getDestination(self.p + 3, 2), 0)
             self.p += 4
         if opCode == self.EQUALS:
             if self.getParameter(self.p + 1, 0) == self.getParameter(self.p + 2, 1):
-                self.mem[self.mem[self.p + 3]] = 1
+                self.setMem(self.getDestination(self.p + 3, 2), 1)
             else:
-                self.mem[self.mem[self.p + 3]] = 0
+                self.setMem(self.getDestination(self.p + 3, 2), 0)
             self.p += 4
         if opCode == self.NONE:
             self.p += 1
+        if opCode == self.ADJUST_RELATIVE_BASE:
+            self.relativeBase += self.getParameter(self.p+1, 0)
+            self.p += 2
         return 1
