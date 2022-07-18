@@ -1,3 +1,6 @@
+import math
+
+
 def filterNumbers(strNum):
     #   Returns true if string contains number
     try:
@@ -198,3 +201,40 @@ class IntCodeComputer05:
             self.relativeBase += self.getParameter(self.p+1, 0)
             self.p += 2
         return 1
+
+
+PRIMES = [2, 3, 5, 7, 11, 13]
+PRIMES_SQUARED = [number ** 2 for number in PRIMES]
+
+
+class Coord:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+        self.angle = 0
+
+    def __add__(self, o):
+        return Coord(self.x + o.x, self.y + o.y)
+
+    def __eq__(self, o):
+        return self.x == o.x and self.y == o.y
+
+    def __ne__(self, o):
+        return self.x != o.x or self.y != o.y
+
+    def calcAngle(self, o):
+        self.angle = math.atan2(-(o.x - self.x), o.y - self.y)
+        if self.angle < 0:
+            self.angle += (2 * math.pi)
+
+    def dir(self, otherCoord):
+        dirCoord = Coord(otherCoord.x-self.x, otherCoord.y-self.y)
+        if dirCoord.x == 0 and dirCoord.y == 0:
+            return dirCoord
+        for p in PRIMES:
+            if p > abs(dirCoord.x) and p > abs(dirCoord.y):
+                break
+            while dirCoord.x % p == 0 and dirCoord.y % p == 0:
+                dirCoord.x = dirCoord.x // p
+                dirCoord.y = dirCoord.y // p
+        return dirCoord
